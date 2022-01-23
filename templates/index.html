@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron">
+    <h1 class="display-4">{{ app_data['name'] }}</h1>
+    <p class="lead">{{ app_data['description'] }}</p>
+
+    <hr class="my-4">
+    <form method="post" action="/">
+    <div class="input-group gap-3">
+      <div class="input-group-prepend">
+        <input type="text" class="form-control" placeholder="Name" name="name">
+        <input type="text" class="form-control" placeholder="Surname" name="surname">
+      </div>
+      <input class="btn btn-outline-primary" type="submit" value="Convert" name = "Convert">
+    </div>
+  </form>
+
+
+
+
+  </div>
+{% endblock %}
