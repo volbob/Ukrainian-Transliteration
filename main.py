@@ -8,7 +8,7 @@ class TransliteratedWord:
         def replaceWithDict(string):
             output=''
             k=0
-
+            
             for i in string.lower():
                 if k==0:
                     if i in dict_first:
@@ -39,8 +39,3 @@ class TransliteratedWord:
         return output
 
         
-
-name = TransliteratedWord(input("Name: "))
-surname = TransliteratedWord(input("Surname: "))
-
-print("Output:",name.transliteration(),surname.transliteration())

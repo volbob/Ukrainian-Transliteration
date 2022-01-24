@@ -7,13 +7,16 @@
 
     <hr class="my-4">
     <form method="post" action="/">
-    <div class="input-group gap-3">
-      <div class="input-group-prepend">
-        <input type="text" class="form-control" placeholder="Name" name="name">
-        <input type="text" class="form-control" placeholder="Surname" name="surname">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">{{ output }}</span>
+        </div>
+        <input type="text" class="form-control" pattern='[\u0401\u0451\u0410-\u044f]{2,}' required placeholder="Name" name="name">
+        <input type="text" class="form-control" pattern='[\u0401\u0451\u0410-\u044f]{2,}' required placeholder="Surname" name="surname">
+        <div class="input-group-append">
+          <input class="btn btn-outline-primary" type="submit" value="Convert" name = "Convert">
+        </div>
       </div>
-      <input class="btn btn-outline-primary" type="submit" value="Convert" name = "Convert">
-    </div>
   </form>
 
 
